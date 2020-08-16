@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".login1">
+
+    <Button
+        android:id="@+id/logb1"
+        android:layout_width="164dp"
+        android:layout_height="46dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:hapticFeedbackEnabled="false"
+        android:text="@string/studentsign"
+        android:textColor="#3ABBF4"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/logb2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/log2" />
+
+    <Button
+        android:id="@+id/logb2"
+        android:layout_width="164dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="68dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:hapticFeedbackEnabled="false"
+        android:text="@string/adminsign"
+        android:textColor="#49BDF1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/log1"
+        android:layout_width="249dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Username"
+        app:layout_constraintBottom_toTopOf="@+id/log2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/log2"
+        android:layout_width="249dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/password"
+        app:layout_constraintBottom_toTopOf="@+id/logb1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/log1"
+        android:autofillHints="" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="157dp"
+        android:layout_height="276dp"
+        app:layout_constraintBottom_toTopOf="@+id/log1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/a4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

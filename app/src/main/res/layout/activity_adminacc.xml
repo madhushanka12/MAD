@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/adminlog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminacc">
+
+    <Button
+        android:id="@+id/adminb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="153dp"
+        android:layout_marginLeft="153dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginRight="170dp"
+        android:layout_marginBottom="58dp"
+        android:background="#5CC9FA"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/pladmin1"
+        android:layout_width="150dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginLeft="121dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="@string/adminid"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/pladmin2"
+        app:layout_constraintStart_toEndOf="@+id/tvadmin1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/plnadmin5"
+        android:layout_width="150dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="37dp"
+        android:ems="10"
+        android:hint="@string/adminconpass"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/plnadmin4"
+        android:layout_width="150dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="@string/adminnewpass"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/plnadmin5"
+        app:layout_constraintStart_toEndOf="@+id/tvadminnewpas" />
+
+    <EditText
+        android:id="@+id/pladmin3"
+        android:layout_width="150dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginLeft="115dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/plnadmin4"
+        app:layout_constraintStart_toEndOf="@+id/tvpas1" />
+
+    <EditText
+        android:id="@+id/pladmin2"
+        android:layout_width="150dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:hint="@string/adminname"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/pladmin3"
+        app:layout_constraintStart_toEndOf="@+id/tvadminname1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="189dp"
+        android:layout_height="248dp"
+        android:layout_marginBottom="57dp"
+        app:layout_constraintBottom_toTopOf="@+id/adminb1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/a4" />
+
+    <TextView
+        android:id="@+id/tvpas1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginRight="115dp"
+        android:layout_marginBottom="26dp"
+        android:text="@string/password"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvadminnewpas"
+        app:layout_constraintEnd_toStartOf="@+id/pladmin3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvadmin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginRight="121dp"
+        android:text="@string/adminid"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/pladmin1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvadminnewpas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:layout_marginBottom="35dp"
+        android:text="@string/adminnewpass"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toStartOf="@+id/plnadmin4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginBottom="37dp"
+        android:text="@string/adminconpass"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvadminname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:text="@string/adminname"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/pladmin2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvadmin1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

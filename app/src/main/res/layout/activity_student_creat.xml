@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/stcreate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6ECCF6"
+    tools:context=".student_creat">
+
+    <Button
+        android:id="@+id/stcreat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:hapticFeedbackEnabled="false"
+        android:text="@string/creat_profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pls4"
+        app:layout_constraintVertical_bias="0.764" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:ems="10"
+        android:hint="@string/date_dd"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/pls2"
+        app:layout_constraintStart_toEndOf="@+id/tvs1" />
+
+    <EditText
+        android:id="@+id/pls4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginBottom="396dp"
+        android:ems="10"
+        android:hint="@string/address"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvs4" />
+
+    <EditText
+        android:id="@+id/pls3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:ems="10"
+        android:hint="@string/contact"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/pls4"
+        app:layout_constraintStart_toEndOf="@+id/tvs3" />
+
+    <EditText
+        android:id="@+id/pls2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:ems="10"
+        android:hint="@string/student_name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/pls3"
+        app:layout_constraintStart_toEndOf="@+id/tvs2" />
+
+    <TextView
+        android:id="@+id/tvscreat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginRight="164dp"
+        android:text="@string/creat_profile"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvs1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/studnet_id"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvs2"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvs6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginBottom="325dp"
+        android:text="@string/Alvele"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvs5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginBottom="21dp"
+        android:text="@string/contact"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvs6"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvs4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginBottom="17dp"
+        android:text="@string/address"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvs5"
+        app:layout_constraintEnd_toStartOf="@+id/pls4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvs3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="21dp"
+        android:text="@string/student_birth"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvs4"
+        app:layout_constraintEnd_toStartOf="@+id/pls3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvs2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="26dp"
+        android:text="@string/student_name"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvs3"
+        app:layout_constraintEnd_toStartOf="@+id/pls2"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

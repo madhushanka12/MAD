@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6AEDCF"
+    tools:context=".notice1">
+
+    <Button
+        android:id="@+id/bn1"
+        android:layout_width="93dp"
+        android:layout_height="62dp"
+        android:background="#6AA0FA"
+        android:text="@string/insert_notice"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+    <Button
+        android:id="@+id/bn"
+        android:layout_width="106dp"
+        android:layout_height="62dp"
+        android:background="#6AA0FA"
+        android:text="@string/update_notice"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+    <Button
+        android:id="@+id/bn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#6AA0FA"
+        android:text="@string/delete_notice"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="622dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="284dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="284dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="218dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="284dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="265dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="284dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="322dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notice"
+        android:textColor="#EA1818"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="64dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

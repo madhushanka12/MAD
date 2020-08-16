@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#89D2F3"
+    tools:context=".exame_view">
+
+    <Button
+        android:id="@+id/bexp1"
+        android:layout_width="118dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginLeft="143dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginBottom="66dp"
+        android:background="@drawable/ic_launcher_background"
+        android:text="@string/View_marks"
+        app:layout_constraintBottom_toTopOf="@+id/tvexp2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/plep1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginRight="58dp"
+        android:layout_marginBottom="41dp"
+        android:ems="10"
+        android:hint="@string/exame_id_enter"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/bexp1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvexp1" />
+
+    <TextView
+        android:id="@+id/tvexp4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginEnd="255dp"
+        android:layout_marginRight="255dp"
+        android:layout_marginBottom="17dp"
+        android:text="@string/student_name"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvexp5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvexp5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginEnd="317dp"
+        android:layout_marginRight="317dp"
+        android:layout_marginBottom="19dp"
+        android:text="@string/gpa"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvexp6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvexp6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginEnd="305dp"
+        android:layout_marginRight="305dp"
+        android:layout_marginBottom="234dp"
+        android:text="@string/result"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvexp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginRight="175dp"
+        android:layout_marginBottom="130dp"
+        android:text="@string/result_sheet"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvexp4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvexp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginEnd="279dp"
+        android:layout_marginRight="279dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/studnet_id"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvexp3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvexp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:text="@string/exame_id"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/plep1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvexp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginEnd="293dp"
+        android:layout_marginRight="293dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/exame_id"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvexp4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
